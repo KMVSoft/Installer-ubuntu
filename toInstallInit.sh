@@ -38,8 +38,8 @@ then
 fi
 
 echo 'aliases for git'
-echo 'added alias gita = git add .'
-alias gita='git add .'
+echo 'added alias gita = git add .' 
+echo "alias gita='git add .'" >> ~/.bashrc
 
 
 
