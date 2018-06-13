@@ -1,4 +1,4 @@
-read -p "### Install  OPENSHOT? (video editor) (Y/N)" -n 1 -r
+read -p "### Install  OPENSHOT? (video editor for linux) (Y/N)" -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -37,8 +37,9 @@ then
 	sudo apt-get install telegram
 fi
 
-
-
+echo 'aliases for git'
+echo 'added alias gita = git add .'
+alias gita='git add .'
 
 
 
