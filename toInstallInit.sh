@@ -37,6 +37,17 @@ then
 	sudo apt-get install telegram
 fi
 
+
+echo "postgresql admin"
+read -p "### Install  pgadmin3? (Y/N)" -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	sudo add-apt-repository ppa:pitti/postgresql
+	sudo apt-get update
+	sudo apt-get install pgadmin3
+fi
+
 echo 'aliases for git'
 echo 'added alias gita = git add .' 
 echo "alias gita='git add .'" >> ~/.bashrc
